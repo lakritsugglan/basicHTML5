@@ -1,21 +1,19 @@
-/* Site Name CSS, 2013-03-14 */
+/* Lakritsugglan CSS */
 
 #pageWrapper{
 	background:#f5f4f0;
-	border-radius:3.5em 0 0 0;
-	margin:.9375em;/*15/16*/
-	padding:1.875em;/*30/16*/
+	border-radius:3.5em 0 0 0;/* "hide" corner behind logo */
+	margin:.9375em;/* 15/16 */
+	/* padding:1.875em;30/16 */
 	padding-top:.9375em;
 	position:relative;
 	z-index:0
 }
-
-.amp{/*
-	font:italic 1.2em 'Book Antiqua','Bookman Old Style',Georgia,serif;
-	font-weight:bold;
-	bottom:-.1em;
-	position:relative;*/
+#pageHeader>*{
+	margin:0 1.875em;/* 30px/16px */
 }
+
+.amp{}
 em{
 
 }
@@ -36,10 +34,14 @@ h1+p,h2+p,h3+p,h4+p{
 
 /** LINKS **/
 a{
-	
+	border-bottom:.0625em solid #63b4af;/* 1px/16 */
+	color:#63b4af;
+	padding-bottom:.25em;
+	text-decoration:none;
 }
 a:active,a:hover{
-	
+	border-bottom-color:#f8716d;
+	color:#f8716d;
 }
 
 
