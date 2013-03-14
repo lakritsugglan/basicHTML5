@@ -2,8 +2,72 @@
 
 #pageWrapper{
 	background:#f5f4f0;
-	box-shadow:inset 0 0 8em rgba(255,255,255,.5),0 .3em .5em rgba(0,0,0,.2);
+	border-radius:3.5em 0 0 0;
 	margin:.9375em;/*15/16*/
 	padding:1.875em;/*30/16*/
 	position:relative;
+}
+
+.amp{/*
+	font:italic 1.2em 'Book Antiqua','Bookman Old Style',Georgia,serif;
+	font-weight:bold;
+	bottom:-.1em;
+	position:relative;*/
+}
+em{
+
+}
+strong{
+
+}
+blockquote{
+
+}
+p{
+	font:normal 100%/1.5 Helvetica,Arial,Verdana,sans-serif;
+	margin:1.1em auto;
+}
+h1+p,h2+p,h3+p,h4+p{
+	margin:0 auto;
+}
+
+
+/** LINKS **/
+a{
+	
+}
+a:active,a:hover{
+	
+}
+
+
+h1,h2,h3,h4{
+	font:normal 100%/1.3 'Lobster',serif;
+	margin:.5em auto 0;
+}
+header h1,header h2,header h3{
+	margin:0;
+}
+h2{
+	font-size:2em;
+}
+h3{
+	font-size:1.6154em;
+}
+#pageHeader>h1{
+	font-size:3.2308em;
+	margin-left:1.2em;
+}
+#pageHeader>h1:before{
+	background:url(img/owl-logo.png) no-repeat;
+	background-size:contain;
+	content:'';
+	height:2em;/* 2x height/width of h1 characters */
+	left:-0.05485407353663959557188662906359em;
+	position:absolute;
+	top:-0.05485407353663959557188662906359em;/* 7.5/(16x8.5454) */
+	width:2em;
+}
+#pageHeader>h2{
+	margin-left:1.6154em;
 }
