@@ -5,7 +5,9 @@
 	border-radius:3.5em 0 0 0;
 	margin:.9375em;/*15/16*/
 	padding:1.875em;/*30/16*/
+	padding-top:.9375em;
 	position:relative;
+	z-index:0
 }
 
 .amp{/*
@@ -42,32 +44,59 @@ a:active,a:hover{
 
 
 h1,h2,h3,h4{
-	font:normal 100%/1.3 'Lobster',serif;
+	font:bold 100%/1.3 monospace,Impact,sans-serif;
 	margin:.5em auto 0;
 }
 header h1,header h2,header h3{
 	margin:0;
 }
 h2{
-	font-size:2em;
-}
-h3{
 	font-size:1.6154em;
 }
-#pageHeader>h1{
-	font-size:3.2308em;
-	margin-left:1.2em;
+h3{
+	font-size:1.3077em;
 }
-#pageHeader>h1:before{
-	background:url(img/owl-logo.png) no-repeat;
+#pageHeader h1{
+	font-size:2.1154em;
+	margin-left:2.1154em;
+	z-index:12;
+}
+#pageHeader h1:after{
+	background:#63b4af;
 	background-size:contain;
 	content:'';
-	height:2em;/* 2x height/width of h1 characters */
+	display:block;
+	height:3em;/* 3x height/width of h1 characters */
 	left:-0.05485407353663959557188662906359em;
 	position:absolute;
 	top:-0.05485407353663959557188662906359em;/* 7.5/(16x8.5454) */
-	width:2em;
+	width:3em;
+	z-index:-1;
+	
+	
+	/* Create css3 circle */
+	padding:0;
+	border-radius:2em;
+	
 }
-#pageHeader>h2{
-	margin-left:1.6154em;
+#pageHeader h1:before{
+	background:url(img/owl-logo.png) no-repeat center center;
+	background-size:100% auto;
+	content:'';
+	display:block;
+	height:3em;/* 3x height/width of h1 characters */
+	left:-0.05485407353663959557188662906359em;
+	position:absolute;
+	top:-0.05485407353663959557188662906359em;/* 7.5/(16x8.5454) */
+	width:3em;
+	z-index:-1;
+	z-index:1;
+}
+
+
+#pageHeader h2{
+	margin-left:2.1154em;
+}
+#pageHeader h1,#pageHeader h2{
+	text-shadow:1px 1px 2px #f5f4f0;
 }
